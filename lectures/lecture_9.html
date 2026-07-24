@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- <h2> Enrollment Form </h2>
     <form action="lecture_9.php" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
@@ -13,10 +14,136 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br><br>
 
-        <label for="message">Message:</label><br>
+        <label for="phone">Phone No.:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for=""occupation">Occupation:</label>
+        <select name="occupation" id="occupation">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+        </select><br><br>
+
+        <fieldset>
+            <legend>Topic of Interest</legend>
+            <label for="checkbox1"> Html
+                <input type="checkbox" name="html" value="yes" id="checkbox1">
+            </label>
+
+            <label for="checkbox2"> CSS
+                <input type="checkbox" name="css" value="yes" id="checkbox2">
+            </label>
+
+            <label for="checkbox3"> JavaScript
+                <input type="checkbox" name="javascript" value="yes" id="checkbox3">
+            </label>
+        </fieldset>
+
+        <label for="message">Comments:</label><br>
         <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
 
         <input type="submit" value="Submit">
+    </form> -->
+
+
+    <!-- <form>
+        <h2> Job Application Form </h2>
+
+        <label for=""name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for=""email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for=""phone">Phone No.:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for ="resume">Upload Resume:</label><br>
+        <input type="file" id="resume" name="resume" required><br><br>
+
+        <label for=""experience">Years of Experience:</label>
+        <input type="number" id="experience" name="experience" min="0" required><br><br>
+
+        <fieldset>
+            <legend> Skills </legend>
+            <label for="checkbox1"> HTML
+                <input type="checkbox" name="html" value="yes" id="checkbox1">
+            </label><br><br>
+
+            <label for="checkbox2"> CSS
+                <input type="checkbox" name="css" value="yes" id="checkbox2">
+            </label><br><br>
+
+            <label for="checkbox3"> JavaScript
+                <input type="checkbox" name="javascript" value="yes" id="checkbox3">
+            </label><br><br>
+        </fieldset>
+
+        <label for=""Highest education">Highest Education:</label>
+        <select name="education" id="education">
+            <option value="highschool">High School</option>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+            <option value="phd">PhD</option>
+        </select><br><br>
+
+        <label for=""availability">Availability to Start:</label>
+        <input type=""radio" name="availability" value="full-time" id="availability1">
+        <label for="availability1">Full-time</label>
+        <input type=""radio" name="availability" value="part-time" id="availability2">
+        <label for="availability2">Part-time</label>
+
+        <label for=""message">Additional Comments:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+    </form> -->
+
+    <form>
+        <h2>Complex form</h2>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            <label for="phone">Phone No.:</label>
+                <input type="tel" id="phone" name="phone" required>
+            <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>  
+                <label for="female">Female</label>
+            <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select a country</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="canada">Canada</option>
+                    <option value="australia">Australia</option>
+                </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Address Street</legend>
+            <label for="street">Street:</label>
+                <input type="text" id="street" name="street" required>
+            <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+            <label for="zip">ZIP Code:</label>
+                <input type="text" id="zip" name="zip" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Information</legend>
+            <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <label for="agreement">I agree to the terms and conditions</label>
+
+        </fieldset>
     </form>
 </body>
 </html>
