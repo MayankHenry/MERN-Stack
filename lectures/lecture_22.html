@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            height: 600px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            --primary-color: brown;
+            --custom-width: 300px;
+            padding: 20px;
+            margin: 10px;
+            background-color: aqua;
+            width: var(--custom-width);
+            height: 250px;
+            border: 1px solid var(--primary-color);
+            box-shadow: -10px -10px 30px gray;
+            /*box-shadow: 10px 10px 10px 10px gray;*/
+            /*box-shadow: inset 10px 10px 10px 10px gray;*/
+            /*box-shadow: 10px 10px 10px 10px rgb(0, 0, 0), inset 10px 10px 10px 10px rgb(254, 250, 250);*/
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+        #welcome{
+            text-shadow: 2px 2px 5px rgb(0, 0, 0), yellow 12px 13px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="images.jpg" alt="Description of the image">
+            <h2 id="welcome">Welcome Mayank</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus laboriosam tenetur excepturi temporibus, vel cum? Repellendus veritatis error facere, praesentium voluptate quas id et alias.</p>
+        </div>
+    </div>
+</body>
+</html>
